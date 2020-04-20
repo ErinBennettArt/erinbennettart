@@ -1,0 +1,700 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width">
+    <title>EventMap</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row jumbotron" style="margin-top:30px:" name="top">
+        <div class="col-md-10 col-md-offset-1 text-left">
+            <!-- <div class="logo">
+                <img class="img-responsive A2Zlogo" src="EventHelp_img/Personify_Logo.svg" />
+            </div> -->
+            <h1>Looking for help with a technical issue?</h1>
+            <a id="btn-jumbo" class="btn" href="mailto:support@a2zinc.net?subject=Event Map Assistance">Contact Us</a>
+        </div>
+    </div>
+    <!-- Back to Top Button -->
+    <div class="hidden-xs hidden-sm">
+        <a href="#top" class="btn btn-top"><i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+    <!-- First Container Starts Here (Desktop) -->
+    <div class="container hidden-xs hidden-sm">
+        <div class="flex-container gotos">
+            <div>
+                <a href="#exhibitor1" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    Exhibitor Listings and Search</a>
+            </div>
+            <div>
+                <a href="#expoplan" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    My Expo Plan</a>
+            </div>
+            <div>
+                <a href="#advanced" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    Advanced Exhibitor Search</a>
+            </div>
+            <div>
+                <a href="#exhibitor2" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    Exhibitor is in My Expo Plan</a>
+            </div>
+            <div>
+                <a href="#exhibitor3" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    Exhibitor is Not in My Expo Plan</a>
+            </div>
+            <div>
+                <a href="#enhanced" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    Enhanced Exhibitor Listings</a>
+            </div>
+            <div>
+                <a href="#maps" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    Maps</a>
+            </div>
+            <div>
+                <a href="#print" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    Print</a>
+            </div>
+            <div>
+                <a href="#login" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    Log in</a>
+            </div>
+            <div>
+                <a href="#legend" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    Legend</a>
+            </div>
+            <div>
+                <a href="#home" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    Home</a>
+            </div>
+            <div>
+                <a href="#layers" id="click-area" class="btn btn-block"><i class="fa fa-list options"></i>
+                    Turn Layers On/Off</a>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion Collapse (Mobile) -->
+    <div class="container-fluid hidden-md hidden-lg">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel-help panel">
+                <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title"> Exhibitor Listings and Search</h4>
+                </a>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div>
+                        <h2>Exhibitor Listings and Search</h2>
+                        <p style="margin-bottom:17px">Displays a list of all the companies exhibiting at the event. Search for a company by clicking on a letter in the alpha-index to the right of the exhibitor list or enter a search term (the company name or a keyword)into the search box at the top. Click on a company name in the exhibitor list to display their ebooth, or click on the booth number to highlight their booth on the floor plan.</p>
+                    </div>
+                    <div>
+                        <img src="EventHelp_img/exh_listing_search.png" class="img-responsive pic fancy" alt="Exhibitor Listings and Search"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-help panel">
+            <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">My Expo Plan</h4>
+            </a>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+                <div>
+                    <h2>My Expo Plan</h2>
+                    <p style="margin-bottom:17px">Exhibitors you save as your favorites are available in the My Expo Plan tab. Exhibitors added to your Expo Plan will show up with a red highlight around their booth.</p>
+                    <p>If you did not login, a temporary cookie will be left on your computer to save your favorites for when you return. If you do login, the system will keep a permanent record of the exhibitors you saved and will allow you to access your Expo Plan from any other computer you login to.</p>
+                </div>
+                <div>
+                    <img src="EventHelp_img/my_expo_plan.png" class="img-responsive pic fancy" alt="Exhibitor Listings and Search"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-help panel">
+        <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">Advanced Exhibitor Search</h4>
+        </a>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+            <div>
+                <h2>Advanced Exhibitor Search</h2>
+                <p style="margin-bottom:17px">Use this form to search for a company or product by keyword, categories, or location. Results will display a list of matching exhibitors, and their booths will be highlighted on the floor plan.</p>
+            </div>
+            <div>
+                <img src="EventHelp_img/category.png" class="img-responsive pic fancy" alt="Advanced Exhibitor Search"></img>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="panel-help panel">
+        <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title"> Exhibitor is not in My Expo Plan</h4>
+        </a>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+            <div>
+                <h2>Exhibitor is not in My Expo Plan</h2>
+                <p style="margin-bottom:17px">To add an exhibitor to your Expo Plan as a favorite, click on the empty star icon to the left of their name in the list. This will change the icon into a solid blue star, and the exhibitor will show up as a favorite in your Expo Plan.</p>
+            </div>
+            <div>
+                <img src="EventHelp_img/add_favorite_exh.png" class="img-responsive pic fancy" alt="Advanced Exhibitor Search"></img>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="panel-help panel">
+        <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title"> Exhibitor is in My Expo Plan</h4>
+        </a>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+        <div class="panel-body">
+            <div>
+                <h2>Exhibitor is in My Expo Plan</h2>
+                <p style="margin-bottom:17px">If you have added an exhibitor to your Expo Plan as a favorite, they will have the solid blue star icon to the left of their name in the list. To remove them from your Expo Plan, click on the solid blue star icon. Once it has turned into an empty star outline, they have been removed from your Expo Plan.</p>
+            </div>
+            <div>
+                <img src="EventHelp_img/remove_favorite_exh.png" class="img-responsive pic fancy" alt="Exhibitor is in My Expo Plan"></img>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="panel-help panel">
+        <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <div class="panel-heading" role="tab" id="headingSix">
+                <h4 class="panel-title">Enhanced Exhibitor Listing</h4>
+        </a>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+        <div class="panel-body">
+            <div>
+                <h2>Enhanced Exhibitor Listing</h2>
+                <p>A red star with an E in the middle indicates that the exhibitor has enhanced their listing with products, show specials, press releases, and/or embedded videos.</p>
+            </div>
+            <div>
+                <img src="EventHelp_img/enhanced_exh_listing.png" class="img-responsive pic fancy" alt="Enhanced Exhibitor Listing"></img>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="panel-help panel">
+        <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <div class="panel-heading" role="tab" id="headingSeven">
+                <h4 class="panel-title">Show Maps</h4>
+        </a>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+        <div class="panel-body">
+            <div>
+                <h2>Show Maps</h2>
+                <p style="margin-bottom:17px">When viewing the Event Map on a phone or tablet, use this icon to switch to map view. This icon will also display a list of available maps when more than one map is available for an event.</p>
+                <p>Locate an exhibitor's booth(s) instantly on the floor plan by clicking on the booth number(s) next to their name.</p>
+            </div>
+            <div>
+                <img src="EventHelp_img/map_it.png" class="img-responsive pic fancy" alt="Map It"></img>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="panel-help panel">
+        <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            <div class="panel-heading" role="tab" id="headingEight">
+                <h4 class="panel-title">Print</h4>
+        </a>
+    </div>
+    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+        <div class="panel-body">
+            <div>
+                <h2>Print</h2>
+                <p style="margin-bottom:17px">Print the floor plan maps, the complete exhibitor list, or your Expo Plan by selecting one of the options available on the print panel.</p>
+            </div>
+            <div>
+                <img src="EventHelp_img/print.png" class="img-responsive pic" alt="Print"></img>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="panel-help panel">
+        <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            <div class="panel-heading" role="tab" id="headingNine">
+                <h4 class="panel-title">Log In</h4>
+        </a>
+    </div>
+    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+        <div class="panel-body">
+            <div>
+                <h2>Log In</h2>
+                <p style="margin-bottom:17px">Click to login to the system as a user or registered attendee.</p>
+            </div>
+            <div>
+                <img src="EventHelp_img/login.png" class="img-responsive pic" alt="Log In"></img>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="panel-help panel">
+        <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            <div class="panel-heading" role="tab" id="headingTen">
+                <h4 class="panel-title">Legend </h4>
+        </a>
+    </div>
+    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+        <div class="panel-body">
+            <div>
+                <h2>Legend</h2>
+                <p style="margin-bottom:17px">Mousing over this icon opens the color legend which shows what each teardrop and booth space color means.</p>
+            </div>
+            <div>
+                <img src="EventHelp_img/legend.png" class="img-responsive pic" alt="Legend"></img>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="panel-help panel">
+        <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+            <div class="panel-heading" role="tab" id="headingEleven">
+                <h4 class="panel-title">Home </h4>
+        </a>
+    </div>
+    <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+        <div class="panel-body">
+            <div>
+                <h2>Home</h2>
+                <p style="margin-bottom:17px">Clicking Home will open a pop-over box that displays the home page for this event.</p>
+            </div>
+            <div>
+                <img src="EventHelp_img/home.png" class="img-responsive pic" alt="home"></img>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="panel-help panel">
+        <a class="tab" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+            <div class="panel-heading" role="tab" id="headingTwelve">
+                <h4 class="panel-title">Turn Layers On/Off</h4>
+        </a>
+    </div>
+    <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+        <div class="panel-body">
+            <div>
+                <h2>Turn Layers On/Off</h2>
+                <p style="margin-bottom:17px">Clicking the Layers tool gives the user the option to show/hide the booth colors that highlight the available/reserved/assigned status of booths, turn on/off company names for booths, show/hide favorites (My Exhibitors) tear drop on booths, show/hide the mapped booths teardrop.</p>
+            </div>
+            <div>
+                <img src="EventHelp_img/layers.png" class="img-responsive pic" alt="Turn Layers On/Off"></img>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Desktop -->
+    <div class="container-fluid large hidden-xs hidden-sm">
+        <a name="exhibitor1"></a>
+        
+        <!-- Rows Start Here -->
+        <div class="row grey">
+            <div class="col-md-1 col-lg-1"></div>
+            <div class="col-md-3 col-lg-3 col-sm-12 pic text-left">
+                <h2>Exhibitor Listings and Search</h2>
+                <p style="margin-bottom:17px">Displays a list of all the companies exhibiting at the event. Search for a company by clicking on a letter in the alpha-index to the right of the exhibitor list or enter a search term (the company name or a keyword)into the search box at the top. Click on a company name in the exhibitor list to display their ebooth, or click on the booth number to highlight their booth on the floor plan.</p>
+            </div>
+            <div class="col-md-7 col-lg-7 col-sm-12 pic">
+                <img src="EventHelp_img/exh_listing_search.png" class="img-responsive pic fancy" alt="Exhibitor Listings and Search"></img>
+            </div>
+            <div class="col-md-1 col-lg-1"></div>
+        </div>
+        <a name="expoplan"></a>
+        
+        <div class="row white">
+            <div class="col-md-1 col-lg-1"></div>
+            <div class="col-md-7 col-lg-7 col-sm-12 pic">
+                <img src="EventHelp_img/my_expo_plan.png" class="img-responsive pic fancy" alt="My Expo Plan"></img>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-12 pic text-left">
+                <h2>My Expo Plan</h2>
+                <p style="margin-bottom:17px">Exhibitors you save as your favorites are available in the My Expo Plan tab. Exhibitors added to your Expo Plan will show up with a red highlight around their booth.</p>
+                <p>If you did not login, a temporary cookie will be left on your computer to save your favorites for when you return. If you do login, the system will keep a permanent record of the exhibitors you saved and will allow you to access your Expo Plan from any other computer you login to.</p>
+            </div>
+            <div class="col-md-1 col-lg-1"></div>
+        </div>
+        <a name="advanced"></a>
+        
+        <div class="row grey">
+            <div class="col-md-2 col-lg-2">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic text-left">
+                <h2>Advanced Exhibitor Search</h2>
+                <p style="margin-bottom:17px">Use this form to search for a company or product by keyword, categories, or location. Results will display a list of matching exhibitors, and their booths will be highlighted on the floor plan.</p>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic">
+                <img src="EventHelp_img/category.png" class="img-responsive pic fancy" alt="Advanced Exhibitor Search"></img>
+            </div>
+            <div class="col-md-2 col-lg-2">
+            </div>
+        </div>
+        <a name="exhibitor3"></a>
+        
+        <div class="row white">
+            <div class="col-md-2 col-lg-2">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic">
+                <img src="EventHelp_img/add_favorite_exh.png" class="img-responsive pic fancy" alt="Exhibitor is not in My Expo Plan"></img>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic text-left">
+                <h2>Exhibitor is not in My Expo Plan</h2>
+                <p style="margin-bottom:17px">To add an exhibitor to your Expo Plan as a favorite, click on the empty star icon to the left of their name in the list. This will change the icon into a solid blue star, and the exhibitor will show up as a favorite in your Expo Plan.</p>
+            </div>
+            <div class="col-md-2 col-lg-2">
+            </div>
+        </div>
+        <a name="exhibitor2"></a>
+        
+        <div class="row grey">
+            <div class="col-md-2 col-lg-2">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic text-left">
+                <h2>Exhibitor is in My Expo Plan</h2>
+                <p style="margin-bottom:17px">If you have added an exhibitor to your Expo Plan as a favorite, they will have the solid blue star icon to the left of their name in the list. To remove them from your Expo Plan, click on the solid blue star icon. Once it has turned into an empty star outline, they have been removed from your Expo Plan.</p>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic">
+                <img src="EventHelp_img/remove_favorite_exh.png" class="img-responsive pic fancy" alt="Exhibitor is in My Expo Plan"></img>
+            </div>
+            <div class="col-md-2 col-lg-2">
+            </div>
+        </div>
+        <a name="enhanced"></a>
+        
+        <div class="row white">
+            <div class="col-md-8 col-lg-8 col-sm-12 pic">
+                <img src="EventHelp_img/enhanced_exh_listing.png" class="img-responsive pic fancy" alt="Enhanced Exhibitor Listing"></img>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic text-left">
+                <h2>Enhanced Exhibitor Listing</h2>
+                <p>A red star with an E in the middle indicates that the exhibitor has enhanced their listing with products, show specials, press releases, and/or embedded videos.</p>
+            </div>
+        </div>
+        <a name="maps"></a>
+        
+        <div class="row grey">
+            <div class="col-md-4 col-lg-4 col-sm-12 pic text-left">
+                <h2>Show Maps</h2>
+                <p style="margin-bottom:17px">When viewing the Event Map on a phone or tablet, use this icon to switch to map view. This icon will also display a list of available maps when more than one map is available for an event.</p>
+                <p>Locate an exhibitor's booth(s) instantly on the floor plan by clicking on the booth number(s) next to their name.</p>
+            </div>
+            <div class="col-md-8 col-lg-8 col-sm-12 pic">
+                <img src="EventHelp_img/map_it.png" class="img-responsive pic fancy" alt="Map It"></img>
+            </div>
+        </div>
+        <a name="print"></a>
+        
+        <div class="row white">
+            <div class="col-md-2 col-lg-2">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic">
+                <img src="EventHelp_img/print.png" class="img-responsive pic" alt="Print"></img>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic text-left">
+                <h2>Print</h2>
+                <p style="margin-bottom:17px">Print the floor plan maps, the complete exhibitor list, or your Expo Plan by selecting one of the options available on the print panel.</p>
+            </div>
+            <div class="col-md-2 col-lg-2">
+            </div>
+        </div>
+        <a name="login"></a>
+        
+        <div class="row grey">
+            <div class="col-md-1 col-lg-1">
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-12 pic text-left">
+                <h2>Log In</h2>
+                <p style="margin-bottom:17px">Click to login to the system as a user or registered attendee.</p>
+            </div>
+            <div class="col-md-7 col-lg-7 col-sm-12 pic">
+                <img src="EventHelp_img/login.png" class="img-responsive pic" alt="Log In"></img>
+            </div>
+            <div class="col-md-1 col-lg-1">
+            </div>
+        </div>
+        <a name="legend"></a>
+        
+        <div class="row white">
+            <div class="col-md-2 col-lg-2">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic">
+                <img src="EventHelp_img/legend.png" class="img-responsive pic" alt="Legend"></img>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic text-left">
+                <h2>Legend</h2>
+                <p style="margin-bottom:17px">Mousing over this icon opens the color legend which shows what each teardrop and booth space color means.</p>
+            </div>
+            <div class="col-md-2 col-lg-2">
+            </div>
+        </div>
+        <a name="home"></a>
+        
+        <div class="row grey">
+            <div class="col-md-2 col-lg-2">
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-12 pic text-left">
+                <h2>Home</h2>
+                <p style="margin-bottom:17px">Clicking Home will open a pop-over box that displays the home page for this event.</p>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 pic">
+                <img src="EventHelp_img/home.png" class="img-responsive pic" alt="Home"></img>
+            </div>
+            <div class="col-md-1 col-lg-1">
+            </div>
+        </div>
+        <a name="layers"></a>
+        
+        <div class="row white">
+            <div class="col-md-3 col-lg-3">
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-12 pic">
+                <img src="EventHelp_img/layers.png" class="img-responsive pic" alt="Turn Layers On/Off"></img>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 pic text-left">
+                <h2>Turn Layers On/Off</h2>
+                <p style="margin-bottom:17px">Clicking the Layers tool gives the user the option to show/hide the booth colors that highlight the available/reserved/assigned status of booths, turn on/off company names for booths, show/hide favorites (My Exhibitors) tear drop on booths, show/hide the mapped booths teardrop.</p>
+            </div>
+            <div class="col-md-2 col-lg-2">
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
+<!-- CSS Don't Touch -->
+<style>
+@font-face {
+    font-family: 'europa';
+    src: url('../fonts/europa-regular-webfont.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/europa-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/europa-regular-webfont.woff2') format('woff2'),
+        url('../fonts/europa-regular-webfont.woff') format('woff'),
+        url('../fonts/europa-regular-webfont.ttf') format('truetype'),
+        url('../fonts/europa-regular-webfont.svg#europaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'europa', sans-serif;
+    color: #444;
+}
+
+h1 {
+    font-family: 'europa', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+    color: #0e181f;
+    margin-top: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img.img-responsive.A2Zlogo {
+    max-width: 200px;
+    margin-bottom: 40px;
+}
+
+.jumbotron {
+    background-color: #0e181f;
+    color: white;
+}
+
+#btn-jumbo.btn {
+    font-size: 23px;
+    background-color: #009cbd;
+    padding: 8px 36px;
+    color: white;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+
+#btn-jumbo.btn:hover {
+    background-color: #55c6e8;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    #btn-jumbo {
+        font-size: 18px;
+    }
+}
+
+.col-md-10.col-md-offset-1.text-left {
+    margin: 0 30px;
+}
+
+
+/* Jump Links */
+.flex-container.gotos {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-container.gotos div {
+    margin: auto;
+
+}
+
+.options {
+    display: none;
+}
+
+.options:hover {
+    display: inherit;
+    padding-right: 3px;
+}
+
+.gotos>div>a {
+    font-size: 13px;
+    color: #009cbd;
+}
+
+
+#click-area.btn {
+    color: #009cbd;
+    padding: 9px 16px;
+    border: 1px solid #009cbd;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    min-width: 240px;
+    background-color: white;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #click-area.btn {
+        min-width: 220px;
+    }
+}
+
+#click-area.btn:hover {
+    background-color: #009cbd;
+    color: white;
+    */
+}
+
+
+.pic {
+    vertical-align: middle;
+    margin: auto;
+    max-height: 420px;
+}
+
+
+.pic.fancy {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.08);
+}
+
+.panel-heading {
+    background-color: #ececec;
+    color: #0e181f;
+}
+
+h4.panel-title {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+a.tab {
+    color: #0e181f;
+}
+
+.panel-heading:hover {
+    background-color: #009cbd;
+    color: white;
+    text-decoration: none;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.panel-help.panel {
+    border: none;
+    box-shadow: none;
+    margin-bottom: 8px;
+}
+
+a.tab:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a.tab:focus {
+    text-decoration: none;
+}
+
+a.btn.btn-top {
+    border-radius: 500px;
+    font-size: 17px;
+    color: #009cbd;
+    padding: 6px 7px 7px 7px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: transparent;
+    border: 1px solid #009cbd;
+    z-index: 100;
+}
+
+a.btn.btn-top:hover {
+    background-color: #009cbd;
+    color: white;
+}
+
+
+.row.grey {
+    background-color: #0e181f0d;
+    min-height: 500px;
+    padding: 50;
+    display: flex;
+}
+
+.row.white {
+    background-color: transparent;
+    min-height: 500px;
+    padding: 50;
+    display: flex;
+}
+
+
+
+</style>
