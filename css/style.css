@@ -129,7 +129,7 @@ button.navbar-toggle {
 .HomeHeaderImg {
 	background-image: url(../img/Hero.jpg);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
     background-position: top;
 	background-size: cover;
 	height: calc(100vh - 5rem);
@@ -336,7 +336,7 @@ div.qLinks:hover {
     height: 13rem;
     background-image: url(../img/Hero.jpg);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
     background-position: top;
     background-size: cover;
 }
