@@ -196,6 +196,7 @@ button.navbar-toggle {
     .row.flex-container.photo {
         margin-top: 4rem;
         padding-bottom: 6rem;
+        height: 100%;
     }
 }
 
