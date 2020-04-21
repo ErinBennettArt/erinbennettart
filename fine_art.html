@@ -26,6 +26,32 @@
     <![endif]-->
   </head>
   <body>
+
+    <!-- PAGE CONSTRUCTION MODAL -->
+    <div id="construction" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</button>
+                    <h3 class="modal-title">This Page is Still Being Created</h3>
+                </div>
+                <div class="modal-img">
+                    <img class="img-responsive" src="img/sculpture.jpg">
+                </div>
+                <div class="modal-body">
+                    <p>Thanks for your interest in my fine art! This page is currently being built, but feel free to check back later to see some of my sculpture.</p>
+                </div>
+                <a href="portfolio.html">
+                <div class="btn modal-btn">
+                    Go to Portfolio
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
 	<div class="SubPageTop">
 		<div class="SubPageOverlay">
 
@@ -403,7 +429,13 @@
 				$(".modal:visible").each(alignModal);
 			});   
 		});
-		</script>
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+                $("#construction").modal('show');
+            });
+        </script>
     
   </body>
 </html>

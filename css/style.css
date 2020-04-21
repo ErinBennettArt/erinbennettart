@@ -13,6 +13,14 @@ h1 {
     font-family: 'Manrope', sans-serif;
 }
 
+h2 {
+    font-family: 'Manrope', sans-serif;
+}
+
+h3 {
+    font-family: 'Manrope', sans-serif;
+}
+
 p {
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     font-size: 1.7rem;
@@ -36,6 +44,7 @@ a:focus {
 .navbar-default {
  background-color: transparent;
  border-color:transparent;
+ z-index: 1;
 }
 
 .navbar-nav {
@@ -101,7 +110,7 @@ button.navbar-toggle {
 
  .navbar-nav {
   margin:0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #000000e6;
   width: 100%;
  }
  
@@ -183,6 +192,12 @@ button.navbar-toggle {
     height: 95vh;
 }
 
+@media (max-width: 992px) {
+    .row.flex-container.photo {
+        margin-top: 4rem;
+    }
+}
+
 .PhotoText {
     position: absolute;
     top: 50%;
@@ -193,7 +208,6 @@ button.navbar-toggle {
     background-color: #1c1e1f;
     text-align: left;
     color: white;
-
 }
 
 #photo h1 {
@@ -241,7 +255,7 @@ img.ErinPic.img-responsive {
 
 
 
-/*Quick Links*/
+/*QUICK LINKS*/
 
 #quickLinks {
     background-color: #fff;
@@ -434,6 +448,10 @@ div.qLinks:hover i.go-link {
 }
 
 /* PRINT WORKS */
+#printWorks {
+    padding-bottom: 10rem;
+}
+
 .pWorks {
     border: .7rem solid rgba(28, 30, 31, 0.25);
     padding: 0rem;
@@ -458,10 +476,13 @@ div.qLinks:hover i.go-link {
     cursor: pointer;
 }
 
+.modal-header {
+    background-color: #66bd9f;
+    color: white;
+    padding: 1.5rem 4rem;
+}
 
-#printWorks .modal-header {
-    background-color: #1c1e1f;
-    color: #66bd9f;
+.modal-body {
     padding: 1.5rem 4rem;
 }
 
@@ -469,11 +490,38 @@ div.qLinks:hover i.go-link {
     padding: 0;
 }
 
-#printWorks .modal-header .close {
-    margin-top: -2.5rem;
+.modal-header .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
     color: white;
     text-shadow: none;
+}
 
+.btn.modal-btn {
+    background-color: #66bd9f;
+    color: white;   
+    border: .15rem solid #66bd9f;
+    border-radius: 50rem;
+    margin: 0 2rem 2rem 4rem;
+    padding: .7rem 1.6rem;
+    font-size: 1.7rem;
+}
+
+.btn.modal-btn:hover {
+    color: #66bd9f;
+    border: .15rem solid #66bd9f;
+    background-color: transparent;
+}
+
+.modal-img {
+    padding: 0;
+    overflow: hidden;
+    height: 30vh;
+}
+
+.modal-img img {
+    object-fit: cover;
 }
 
 /*FOOTER*/
