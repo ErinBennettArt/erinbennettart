@@ -195,6 +195,7 @@ button.navbar-toggle {
 @media (max-width: 992px) {
     .row.flex-container.photo {
         margin-top: 4rem;
+        padding-bottom: 6rem;
     }
 }
 
@@ -208,9 +209,17 @@ button.navbar-toggle {
     background-color: #1c1e1f;
     text-align: left;
     color: white;
+    padding-bottom: 6rem;
+}
 }
 
 #photo h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #66bd9f;
+}
+
+.PhotoText h1 {
     font-size: 3rem;
     font-weight: 700;
     color: #66bd9f;
