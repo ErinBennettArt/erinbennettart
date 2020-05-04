@@ -41,32 +41,32 @@ a:focus {
 }
 
 /*NAVIGATION*/
-.navbar-default {
+/* .navbar-default {
  background-color: transparent;
  border-color:transparent;
  z-index: 1;
-}
+} */
 
-.navbar-nav {
+.navbar {
  font-family: 'Manrope', sans-serif;
  font-size: 1.6rem;
  margin: 3.5rem 5rem 0;
 }
 
-.navbar-default .navbar-nav li a {
+.navbar-light .navbar-nav .nav-link {
  color:#fff;
  padding: 0 0 .2rem 0;
  border-bottom: .12rem solid transparent;
  margin: 1.5rem;
 }
 
-.navbar-default .navbar-nav li a:hover {
+.navbar-light .navbar-nav .nav-link:hover {
  color:#66bd9f;
  padding: 0 0 .2rem 0;
  border-bottom: .1rem solid #66bd9f;
 }
 
-.navbar-default .navbar-nav li a.active {
+.navbar-light .navbar-nav .nav-link.active {
     color:#66bd9f;
     padding: 0 0 .2rem 0;
     border-bottom: .1rem solid #66bd9f;
@@ -81,35 +81,36 @@ a:focus {
     box-shadow: none;
 }
 
-button.navbar-toggle {
+.navbar-light button.navbar-toggler {
     color: white;
     border: none;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+.navbar-light button.navbar-toggler:focus, .navbar-light button.navbar-toggler:hover {
     background-color: transparent;
     color: #66bd9f;
+    outline: none;
 
 }
 
-.navbar-default .navbar-toggle .icon-bar {
+/* .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
-}
+} */
 
 /*MEDIA QUERIES*/
 
-@media(max-width: 768px) {
+@media(max-width: 991px) {
 
  .logo img {
   margin: 1rem 0 0 1.5rem;
  }
 
  .navbar-nav {
-  margin:0;
+  margin: 1rem 0;
   background-color: #000000e6;
   width: 100%;
  }
